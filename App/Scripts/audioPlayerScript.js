@@ -15,7 +15,7 @@ const cover = document.getElementById('cover');
 
 // Song Titles:
 
-const songs = ['hey', 'summer', 'ukulele', 'night-detective'];
+const songs = ['8-Bit-Fun', 'Summer', 'Der-Fotovoltaik', 'night-detective'];
 
 //Keep track of song  
 let songIndex = 3;
@@ -25,8 +25,8 @@ loadSong(songs[songIndex]);
 
 function loadSong(song) {
   title.innerText = song;
-  audio.src = `musicFiles/${song}.mp3`;
-  cover.src = `images/${song}.jpg`;
+  audio.src = `../MusicFiles/AudioPlayerMusic/${song}.mp3`;
+  cover.src = `../Images/AudioDiscImages/${song}.jpg`;
 }
 
 //Play and Pause Song
@@ -137,7 +137,7 @@ playBtn.addEventListener('click', () => {
 
 
 
-//Making the Song Title Squigle
+//Making the Song Title Wiggle
 let SOURCE_TEXT = "Audio File Player";
 const $characters = []; //This is meant to signify special variable.
 SOURCE_TEXT.split('').forEach((char, idx) => {
