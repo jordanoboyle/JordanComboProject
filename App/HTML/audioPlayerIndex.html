@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio File Player</title>
+  <link rel="stylesheet" href="../CSSDir/audioPlayerStyle.css">
+  <script src="https://kit.fontawesome.com/fcdeeb62e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 id="wiggle"></h1>
+
+  <div class="music-container" id="music-container">
+    <!-- need play to exist for animation "music-container play": from JS -->
+    <div class="music-info">
+      <h4 id="title"></h4>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <audio src="../MusicFiles/AudioPlayerMusic/8-Bit-Fun.mp3" id="audio"></audio>
+
+    <div class="img-container">
+      <img src="Images/AudioDiscImages/8-Bit-Fun.png" alt="music-cover" id="cover">
+    </div>
+    <div class="navigation">
+      <button id="prev" class="action-btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="action-btn action-btn-play">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="next" class="action-btn">
+        <i class="fas fa-forward"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="music-selection-container" id="music-selection-container">
+    <h4 id="song-selection">
+      Song Selection
+      <button class="options-btn" id="options-btn"><i class="fa-solid fa-circle-plus"></i></button>
+    </h4>
+    <div class="options-container" id="options-container">
+      <div class="song-opt-container" id="song-opt-container">
+        <p id="song-option">
+          <img id="song-icon" src="images/night-detective.jpg" alt="NO IMAGE">
+          Song # 1
+          <button id="play-from-playlist">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </p>
+        <p id="song-option">
+          <img id="song-icon" src="images/night-detective.jpg" alt="NO IMAGE">
+          Song # 1
+          <button id="play-from-playlist">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </p>
+        <p id="song-option">
+          <img id="song-icon" src="images/night-detective.jpg" alt="NO IMAGE">
+          Song # 1
+          <button id="play-from-playlist">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </p>
+        <p id="song-option">
+          <img id="song-icon" src="images/night-detective.jpg" alt="NO IMAGE">
+          Song # 1
+          <button id="play-from-playlist">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../Scripts/audioPlayerScript.js"></script>
+</body>
+
+</html>
