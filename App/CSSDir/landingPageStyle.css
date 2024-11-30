@@ -69,3 +69,46 @@ footer {
   width: 100vw;
   border: 2px solid #ddd;
 }
+
+/* NAV BAR (needs to be in each css file) */
+nav {
+  background-color: black;
+  /*Needs changed, temp*/
+  border-right: 5px solid plum;
+  color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  z-index: 100;
+  /* transform: translateX(-100%); */
+}
+
+nav .logo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+}
+
+nav ul {
+  border-bottom: 5px solid plum;
+  padding: 20px;
+}
+
+nav ul li {
+  border-top: 2px solid plum;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: double;
+}
+
+nav ul li a:hover {
+  color: aqua;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
