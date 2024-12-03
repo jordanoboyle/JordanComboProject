@@ -35,6 +35,7 @@
 body {
   background-color: var(--secondary-background);
   margin: 0;
+  transition: 0.5s;
 }
 
 .total-container {
@@ -70,11 +71,18 @@ footer {
   border: 2px solid #ddd;
 }
 
+
+
 /* NAV BAR (needs to be in each css file) */
+
+body.show-nav {
+  transform: translate(220px);
+}
+
 nav {
   background-color: black;
   /*Needs changed, temp*/
-  border-right: 5px solid plum;
+  border-right: 5px solid rgba(248, 3, 228, 0.754);
   color: grey;
   position: fixed;
   top: 0;
@@ -82,7 +90,7 @@ nav {
   width: 220px;
   height: 100vh;
   z-index: 100;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 }
 
 nav .logo img {
@@ -93,12 +101,12 @@ nav .logo img {
 }
 
 nav ul {
-  border-bottom: 5px solid plum;
+  border-bottom: 5px solid rgba(248, 3, 228, 0.754);
   padding: 20px;
 }
 
 nav ul li {
-  border-top: 2px solid plum;
+  border-top: 2px solid rgba(248, 3, 228, 0.754);
   padding: 20px;
 }
 
@@ -111,4 +119,29 @@ nav ul li a:hover {
   color: aqua;
   text-decoration: underline;
   text-decoration-color: aqua;
+}
+
+/* Nav Toggle Button  */
+#toggle-nav {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#toggle-nav:hover {
+  background-color: black;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 10px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  padding: 8px 15px;
+  cursor: pointer;
 }
