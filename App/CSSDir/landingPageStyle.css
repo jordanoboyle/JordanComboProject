@@ -57,6 +57,9 @@ header {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer {
@@ -79,6 +82,7 @@ body.show-nav {
   transform: translate(220px);
 }
 
+
 nav {
   background-color: black;
   /*Needs changed, temp*/
@@ -92,6 +96,15 @@ nav {
   z-index: 100;
   transform: translateX(-100%);
 }
+
+/* Navbar Open Effect */
+
+/* .total-container.nav-open .header-container,
+.total-container.nav-open .main-container,
+.total-container.nav-open .footer-container {
+  margin-left: 0;
+  /* Adjust based on nav-bar's expanded width (250 - 60) */
+
 
 nav .logo img {
   height: 200px;
